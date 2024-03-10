@@ -63,7 +63,7 @@ function createCard(data) {
       const detail = await response.json();
       sessionStorage.setItem("presentStoragePointer", JSON.stringify(detail));
       sessionStorage.setItem(data.id, JSON.stringify(detail));
-      window.location.href = "detail.html";
+      window.location.href = "card.html";
     };
 
     if (!sessionStorage.getItem(data.id)) {
